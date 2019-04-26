@@ -1,0 +1,12 @@
+/* Navigation List */
+
+.nav_list {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+}
+
+.nav_item + .nav_item::before {
+  content: '/';
+  margin: 0 8px;
+}
