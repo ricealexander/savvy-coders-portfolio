@@ -17,6 +17,18 @@ body {
   display: flex;
 }
 
+.horizontal_list {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.socials_icon {
+  height: 3rem;
+  width: auto;
+  margin: 0 .5rem;
+}
 
 /* Navigation List */
 .top-navigation {
@@ -28,11 +40,7 @@ body {
 }
 
 .nav_list {
-  display: flex;
   justify-content: flex-end;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
 }
 
 .nav_item {
