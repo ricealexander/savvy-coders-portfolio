@@ -7,9 +7,21 @@ body {
   height: 100vh;
 }
 
+.container {
+  padding: 0 1rem;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+.columns {
+  display: flex;
+}
+
+
 /* Navigation List */
 .top-navigation {
   background-color: #282829;
+  box-shadow: 2px 2px 2px #28282926;
   color: white;
   margin-bottom: 1rem;
   overflow: hidden;
@@ -17,6 +29,7 @@ body {
 
 .nav_list {
   display: flex;
+  justify-content: flex-end;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -33,6 +46,10 @@ body {
 
 .nav_link {
   color: inherit;
+  display: flex;
   text-decoration: none;
 }
 
+.nav_icon {
+  margin-right: 0.25rem;
+}
