@@ -1,6 +1,16 @@
+// Import Components
 import Header from './components/Header';
 import Content from './components/Content';
 import Footer from './components/Footer';
+
+// Import Images
+import photoAvatar  from "./assets/avatar.png";
+import iconCodepen  from "./assets/svg/icon-codepen.svg";
+import iconCodewars from "./assets/svg/icon-codewars.svg";
+import iconGists    from "./assets/svg/icon-github-gists.svg";
+import iconGithub   from "./assets/svg/icon-github.svg";
+import iconLinkedin from "./assets/svg/icon-linkedin.svg";
+
 
 const root = document.querySelector('[data-hook="root"]');
 
