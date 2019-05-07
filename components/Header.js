@@ -10,7 +10,7 @@ export default function (state) {
         </a>
       </li>
       <li class="nav_item">
-        <a class="nav_link" href="projects/index.html">
+        <a class="nav_link" data-hook="projects-link" href="projects/index.html">
           <i class="material-icons nav_icon">dashboard</i>
           Projects
         </a>
