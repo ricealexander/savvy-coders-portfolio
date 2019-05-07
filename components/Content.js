@@ -1,4 +1,5 @@
-export default `
+export default function (state) {
+  return `
 <main>
   <div class="container" style="margin-top: 3rem;">
 
@@ -24,7 +25,7 @@ export default `
           </li>
         </ul>
   
-        <h3>More Links:</h3>
+        <h3>${state.title || 'More Links'}:</h3>
         <ul class="horizontal_list socials_list">
           <li class="socials_item">
             <a class="socials_link" href="https://codepen.io/ricealexander/">
@@ -47,3 +48,4 @@ export default `
 
   </div>
 </main>`;
+}

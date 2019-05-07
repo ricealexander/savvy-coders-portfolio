@@ -1,4 +1,5 @@
-export default `
+export default function (state) {
+  return `
 <header class="top-navigation">
   <nav class="nav container">
     <ul class="horizontal_list nav_list">
@@ -18,3 +19,4 @@ export default `
   </nav>
 </header>
 `;
+}
