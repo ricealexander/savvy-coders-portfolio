@@ -1,6 +1,6 @@
-import Header from './components/Header.js';
-import Content from './components/Content.js';
-import Footer from './components/Footer.js';
+import Header from './components/Header';
+import Content from './components/Content';
+import Footer from './components/Footer';
 
 const state = {};
 state.title = 'Additional Links';
