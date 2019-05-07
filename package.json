@@ -2,6 +2,10 @@
   "name": "savvy-coders-portfolio",
   "description": "Portfolio built by following Savvy Coders curriculum",
   "version": "0.1.0",
+  "scripts": {
+    "dev": "parcel index.html",
+    "build": "parcel build index.html"
+  },
   "devDependencies": {
     "eslint": "^5.16.0",
     "eslint-config-airbnb": "^17.1.0",
