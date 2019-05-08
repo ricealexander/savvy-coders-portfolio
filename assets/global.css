@@ -4,7 +4,6 @@ body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 1rem;
   margin: 0;
-  height: 100vh;
 }
 
 .perfect-center {
@@ -51,9 +50,10 @@ body {
 
 
 /* Sticky Footer */
-body {
+#root {
   display: flex;
   flex-direction: column;
+  height: 100vh;
 }
 
 main {
