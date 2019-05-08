@@ -1,9 +1,12 @@
 {
   "env": {
+    "browser": true,
     "es6": true
   },
   "extends": "airbnb",
   "rules": {
-    "linebreak-style": "off"
+    "linebreak-style": "off",
+    "no-multi-spaces": "off",
+    "padded-blocks": "off"
   }
 }
