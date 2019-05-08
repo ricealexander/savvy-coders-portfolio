@@ -11,21 +11,34 @@ import iconGists    from "./assets/svg/icon-github-gists.svg";
 import iconGithub   from "./assets/svg/icon-github.svg";
 import iconLinkedin from "./assets/svg/icon-linkedin.svg";
 
+const images = {
+  photoAvatar,
+  iconCodepen,
+  iconCodewars,
+  iconGists,
+  iconGithub,
+  iconLinkedin,
+}
 
-const root = document.querySelector('[data-hook="root"]');
+
+var root = document.querySelector('[data-hook="root"]');
 
 const state = {
   Blog: {
     title: "Additional Links (from blog page)",
+    images,
   },
   Home: {
     title: "Additional Links",
+    images,
   },
   Contact: {
     title: "Additional Links (from contact page)",
+    images,
   },
   Projects: {
     title: "Additional Links (from projects page)",
+    images,
   }
 }
 

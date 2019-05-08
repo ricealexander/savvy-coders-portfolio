@@ -5,7 +5,7 @@ export default function (state) {
 
     <section class="columns">
       <div class="column">
-        <img src="assets/avatar.png" width="400">
+        <img src="${state.images.photoAvatar}" width="400">
       </div>
       <div class="column" style="margin-left: 3rem;">
         <h1 class="title">Alexander Rice</h1>
@@ -15,12 +15,12 @@ export default function (state) {
         <ul class="horizontal_list socials_list">
           <li class="socials_item">
             <a class="socials_link" href="https://github.com/ricealexander">
-              <img class="socials_icon" src="assets/svg/icon-github.svg" alt="Github">
+              <img class="socials_icon" src="${state.images.iconGithub}" alt="Github">
             </a>
           </li>
           <li class="socials_item">
             <a class="socials_link" href="https://www.linkedin.com/in/rice-alexander/">
-              <img class="socials_icon" src="assets/svg/icon-linkedin.svg" alt="LinkedIn">
+              <img class="socials_icon" src="${state.images.iconLinkedin}" alt="LinkedIn">
             </a>
           </li>
         </ul>
@@ -29,17 +29,17 @@ export default function (state) {
         <ul class="horizontal_list socials_list">
           <li class="socials_item">
             <a class="socials_link" href="https://codepen.io/ricealexander/">
-              <img class="socials_icon" src="assets/svg/icon-codepen.svg" alt="Codepen">
+              <img class="socials_icon" src="${state.images.iconCodepen}" alt="Codepen">
             </a>
           </li>
           <li class="socials_item">
             <a class="socials_link" href="https://www.codewars.com/users/ricealexander">
-              <img class="socials_icon" src="assets/svg/icon-codewars.svg" alt="Codewars">
+              <img class="socials_icon" src="${state.images.iconCodewars}" alt="Codewars">
             </a>
           </li>
           <li class="socials_item">
             <a class="socials_link" href="https://gist.github.com/ricealexander">
-              <img class="socials_icon" src="assets/svg/icon-github-gists.svg" alt="GitHub Gists">
+              <img class="socials_icon" src="${state.images.iconGists}" alt="GitHub Gists">
             </a>
           </li>
         </ul>
