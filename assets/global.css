@@ -17,11 +17,9 @@ body {
   max-width: 1000px;
 }
 
-.columns {
-  display: flex;
-  align-items: center;
+.column {
+  margin: 0 1.5rem;
 }
-
 .horizontal_list {
   display: flex;
   list-style-type: none;

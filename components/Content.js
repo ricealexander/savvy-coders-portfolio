@@ -3,11 +3,11 @@ export default function (state) {
 <main>
   <div class="container" style="margin-top: 3rem;">
 
-    <section class="columns">
+    <section class="columns perfect-center">
       <div class="column">
         <img src="${state.images.photoAvatar}" width="400">
       </div>
-      <div class="column" style="margin-left: 3rem;">
+      <div class="column">
         <h1 class="title">Alexander Rice</h1>
         <h2 class="subtitle">Full-Stack Web Developer</h2>
 
