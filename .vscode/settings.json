@@ -6,4 +6,6 @@
   "editor.insertSpaces": true,
   "editor.detectIndentation": false,
   "editor.wordWrap": "on",
+
+  "eslint.autoFixOnSave": true
 }
