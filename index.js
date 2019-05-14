@@ -3,48 +3,11 @@ import Header  from './components/Header';
 import Content from './components/Content';
 import Footer  from './components/Footer';
 
-// Import Images
-import photoAvatar  from './assets/avatar.png';
-import iconCodepen  from './assets/svg/icon-codepen.svg';
-import iconCodewars from './assets/svg/icon-codewars.svg';
-import iconGists    from './assets/svg/icon-github-gists.svg';
-import iconGithub   from './assets/svg/icon-github.svg';
-import iconLinkedin from './assets/svg/icon-linkedin.svg';
+// Import States
+import * as states from './store';
 
-const images = {
-  photoAvatar,
-  iconCodepen,
-  iconCodewars,
-  iconGists,
-  iconGithub,
-  iconLinkedin,
-};
-
-const links =  [
-  { title: 'Home',     icon: 'home' },
-  { title: 'Projects', icon: 'dashboard' },
-  { title: 'Blog',     icon: 'library_books' },
-];
 
 const root = document.querySelector('[data-hook="root"]');
-
-const states = {
-  Home: {
-    title: 'Additional Links',
-    links,
-    images,
-  },
-  Projects: {
-    title: 'Additional Links (from projects page)',
-    links,
-    images,
-  },
-  Blog: {
-    title: 'Additional Links (from blog page)',
-    links,
-    images,
-  },
-};
 
 function render(state) {
 
