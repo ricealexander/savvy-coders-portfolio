@@ -1,6 +1,5 @@
-export default function (state) {
-  return `
+export default state => `
 <footer>
   &copy; Alexander Rice
-</footer>`;
-}
+</footer>
+`;

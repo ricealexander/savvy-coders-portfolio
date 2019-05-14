@@ -20,19 +20,28 @@ const images = {
   iconLinkedin,
 };
 
+const links =  [
+  { title: 'Home',     icon: 'home' },
+  { title: 'Projects', icon: 'dashboard' },
+  { title: 'Blog',     icon: 'library_books' },
+];
+
 const root = document.querySelector('[data-hook="root"]');
 
 const states = {
   Home: {
     title: 'Additional Links',
+    links,
     images,
   },
   Projects: {
     title: 'Additional Links (from projects page)',
+    links,
     images,
   },
   Blog: {
     title: 'Additional Links (from blog page)',
+    links,
     images,
   },
 };

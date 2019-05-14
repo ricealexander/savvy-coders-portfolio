@@ -1,5 +1,4 @@
-export default function (state) {
-  return `
+export default state => `
 <main>
   <div class="container" style="margin-top: 3rem;">
 
@@ -47,5 +46,5 @@ export default function (state) {
     </section>
 
   </div>
-</main>`;
-}
+</main>
+`;
