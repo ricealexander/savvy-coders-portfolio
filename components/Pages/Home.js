@@ -6,6 +6,45 @@ import iconGists    from '../../assets/svg/icon-github-gists.svg';
 import iconGithub   from '../../assets/svg/icon-github.svg';
 import iconLinkedin from '../../assets/svg/icon-linkedin.svg';
 
+const buildLink = (name) => {
+  const items = [
+    {
+      name: 'Codepen',
+      icon: iconCodepen,
+      href: 'https://codepen.io/ricealexander/',
+    },
+    {
+      name: 'Codewars',
+      icon: iconCodewars,
+      href: 'https://www.codewars.com/users/ricealexander',
+    },
+    {
+      name: 'Gists',
+      icon: iconGists,
+      href: 'https://gist.github.com/ricealexander',
+    },
+    {
+      name: 'Github',
+      icon: iconGithub,
+      href: 'https://github.com/ricealexander',
+    },
+    {
+      name: 'LinkedIn',
+      icon: iconLinkedin,
+      href: 'https://www.linkedin.com/in/rice-alexander/',
+    },
+  ];
+
+  const matchingItems = items.filter(item => item.name === name);
+  return (!matchingItems) ? '' : `
+    <li class="socials_item">
+      <a class="socials_link" href="${matchingItems[0].href}">
+        <img class="socials_icon" src="${matchingItems[0].icon}" alt="${matchingItems[0].name}">
+      </a>
+    </li>
+  `;
+};
+
 export default `
 <section class="columns perfect-center">
   <div class="column">
@@ -17,35 +56,15 @@ export default `
 
     <h3>Connect with Me:</h3>
     <ul class="horizontal_list socials_list">
-      <li class="socials_item">
-        <a class="socials_link" href="https://github.com/ricealexander">
-          <img class="socials_icon" src="${iconGithub}" alt="Github">
-        </a>
-      </li>
-      <li class="socials_item">
-        <a class="socials_link" href="https://www.linkedin.com/in/rice-alexander/">
-          <img class="socials_icon" src="${iconLinkedin}" alt="LinkedIn">
-        </a>
-      </li>
+      ${buildLink('Github')}
+      ${buildLink('LinkedIn')}
     </ul>
 
     <h3>More Links:</h3>
     <ul class="horizontal_list socials_list">
-      <li class="socials_item">
-        <a class="socials_link" href="https://codepen.io/ricealexander/">
-          <img class="socials_icon" src="${iconCodepen}" alt="Codepen">
-        </a>
-      </li>
-      <li class="socials_item">
-        <a class="socials_link" href="https://www.codewars.com/users/ricealexander">
-          <img class="socials_icon" src="${iconCodewars}" alt="Codewars">
-        </a>
-      </li>
-      <li class="socials_item">
-        <a class="socials_link" href="https://gist.github.com/ricealexander">
-          <img class="socials_icon" src="${iconGists}" alt="GitHub Gists">
-        </a>
-      </li>
+      ${buildLink('Codepen')}
+      ${buildLink('Codewars')}
+      ${buildLink('Gists')}
     </ul>
   </div>
 </section>
