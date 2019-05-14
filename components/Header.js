@@ -5,7 +5,6 @@ const getIcon = (title) => {
     { title: 'Blog',     text: 'library_books' },
   ];
   const matchingItems = items.filter(item => item.title === title);
-  console.log({ title, items, matchingItems });
   return (matchingItems) ? matchingItems[0].text : '';
 };
 
