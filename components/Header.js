@@ -10,8 +10,8 @@ const linkTemplate2 = (link, callback) => `
 </a>`;
 
 const linkTemplate = (stateLinks, callback) => (html, link) => {
-  if (stateLinks[link]) callback = stateLinks[link].reduce(linkTemplate(stateLinks), '');
-  return html + linkTemplate2(Links[link], callback);
+  const callback2 = (stateLinks[link]) ? stateLinks[link].reduce(linkTemplate(stateLinks), '') : '';
+  return html + linkTemplate2(Links[link], callback2);
 };
 
 export default state => `
