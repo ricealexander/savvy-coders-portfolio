@@ -8,7 +8,7 @@ import iconLinkedin from '../assets/svg/icon-linkedin.svg';
 export default {
   body: 'Home',
   title: 'Home',
-  links: ['Projects', 'Blog'],
+  links: ['projects', 'blog'],
   images: {
     photoAvatar,
   },

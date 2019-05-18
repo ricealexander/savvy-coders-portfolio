@@ -1,1 +1,1 @@
-export default 'Lorem Ipsum';
+export default state => 'Lorem Ipsum';

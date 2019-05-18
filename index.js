@@ -6,7 +6,6 @@ import Footer  from './components/Footer';
 // Import States
 import * as states from './store';
 
-
 const root = document.querySelector('[data-hook="root"]');
 
 function render(state) {

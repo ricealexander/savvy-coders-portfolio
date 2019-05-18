@@ -1,19 +1,10 @@
-const getIcon = (title) => {
-  const items = [
-    { title: 'Home',     text: 'home' },
-    { title: 'Projects', text: 'dashboard' },
-    { title: 'Blog',     text: 'library_books' },
-  ];
-  const matchingItems = items.filter(item => item.title === title);
-  return (matchingItems) ? matchingItems[0].text : '';
-};
+import Links from '../store/Links';
 
-const linkTemplate = (html, link) => `
-  ${html}
-  <a class="nav_link" data-component="${link}" href="#">
+const linkTemplate = (html, link) => `${html}
+  <a class="nav_link" data-component="${Links[link].page}" href="${Links[link].href}">
     <li class="nav_item perfect-center">
-      <i class="material-icons nav_icon">${getIcon(link)}</i>
-      ${link}
+      <i class="material-icons nav_icon">${Links[link].icon}</i>
+      ${Links[link].text}
     </li>
   </a>
 `;
