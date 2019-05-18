@@ -69,11 +69,14 @@ header, footer {
   box-shadow: 2px 2px 2px #28282926;
   color: white;
   margin-bottom: 1rem;
-  overflow: hidden;
 }
 
 .nav_list {
   justify-content: flex-end;
+}
+
+.nav_item {
+  position: relative;
 }
 
 .nav_link {
@@ -95,6 +98,7 @@ header, footer {
 /* Dropdown Menu */
 .nav_dropdown {
   background-color: black;
+  border-right: 5px solid #c87745;
   display: none;
   padding: 0;
   position: absolute;
@@ -103,7 +107,7 @@ header, footer {
   min-width: 150px;
 }
 
-.nav_item:hover > .nav_dropdown {
+.nav_item.has_dropdown:hover > .nav_dropdown {
   display: block;
 }
 
