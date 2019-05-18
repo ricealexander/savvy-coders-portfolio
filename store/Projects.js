@@ -2,7 +2,7 @@ export default  {
   body: 'Projects',
   title: 'Projects',
   links: {
-    primary: ['home', 'blog'],
+    primary: ['home', 'blog', 'projects'],
     projects: ['classProject', 'hackAThon', 'demoDay'],
   },
 };

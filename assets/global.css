@@ -76,21 +76,37 @@ header, footer {
   justify-content: flex-end;
 }
 
-.nav_item {
-  cursor: pointer;
-  padding: 1rem 1.25rem;
-}
-
-.nav_item:hover {
-  background-color: #c87745;
-}
-
 .nav_link {
   color: inherit;
+  cursor: pointer;
   display: flex;
+  padding: 1rem 1.25rem;
   text-decoration: none;
+}
+
+.nav_link:hover {
+  background-color: #c87745;
 }
 
 .nav_icon {
   margin-right: 0.25rem;
+}
+
+/* Dropdown Menu */
+.nav_dropdown {
+  background-color: black;
+  display: none;
+  padding: 0;
+  position: absolute;
+  top: 56px;
+  right: 0;
+  min-width: 150px;
+}
+
+.nav_item:hover > .nav_dropdown {
+  display: block;
+}
+
+.nav_dropdown .nav_link {
+  width: 100%;
 }
