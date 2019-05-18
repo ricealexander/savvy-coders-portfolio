@@ -13,7 +13,6 @@ function render(state) {
 
   function handleNavigation(event) {
     event.preventDefault();
-
     const target = event.target.closest('.nav_link');
     const component = target.getAttribute('data-component');
     render(states[component]);
