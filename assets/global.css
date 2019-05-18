@@ -97,7 +97,7 @@ header, footer {
 
 /* Dropdown Menu */
 .nav_dropdown {
-  background-color: black;
+  background-color: #1a1a1b;
   border-right: 5px solid #c87745;
   display: none;
   padding: 0;

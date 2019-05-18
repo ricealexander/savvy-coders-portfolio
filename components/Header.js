@@ -11,7 +11,6 @@ const buildLink = (link, dropdown) => `
 
 const recursiveLinkBuilder = stateLinks => (html, link) => {
   const dropdown = (stateLinks[link]) ? stateLinks[link].reduce(recursiveLinkBuilder(stateLinks), '') : '';
-  console.log(dropdown);
   return html + buildLink(Links[link], dropdown);
 };
 
