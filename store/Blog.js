@@ -1,5 +1,8 @@
 export default {
   body: 'Blog',
   title: 'Blog',
-  links: ['home', 'projects'],
+  links: {
+    primary: ['home', 'blog', 'projects'],
+    projects: ['classProject', 'hackAThon', 'demoDay'],
+  },
 };
