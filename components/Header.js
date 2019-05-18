@@ -1,4 +1,4 @@
-import Links from '../store/Links';
+import LinkIndex from '../store/Links';
 
 const buildLink = (link, dropdown) => `
 <li class="nav_item perfect-center${dropdown ? ' has_dropdown' : ''}">
@@ -11,7 +11,7 @@ const buildLink = (link, dropdown) => `
 
 const recursiveLinkBuilder = stateLinks => (html, link) => {
   const dropdown = (stateLinks[link]) ? stateLinks[link].reduce(recursiveLinkBuilder(stateLinks), '') : '';
-  return html + buildLink(Links[link], dropdown);
+  return html + buildLink(LinkIndex[link], dropdown);
 };
 
 export default state => `
