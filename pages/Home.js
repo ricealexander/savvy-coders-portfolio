@@ -1,6 +1,6 @@
 const buildSocial = social => `
 <li class="socials_item">
-  <a class="socials_link" href="${social.href}">
+  <a class="socials_link" href="${social.href}" target="_blank">
     <img class="socials_icon" src="${social.icon}" alt="${social.name}">
   </a>
 </li>`;
