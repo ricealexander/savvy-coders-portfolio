@@ -12,8 +12,8 @@ export default {
   body: 'Home',
   title: 'Home',
   links: {
-    primary: ['home', 'blog', 'projects'],
-    projects: ['classProject', 'hackAThon', 'demoDay'],
+    primary: ['home', 'blog', 'trinkets'],
+    trinkets: ['classProject', 'hackAThon', 'demoDay'],
   },
   linkIndex,
   images: {

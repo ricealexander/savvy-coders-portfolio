@@ -5,9 +5,9 @@ export default {
     icon: 'home',
     href: '/',
   },
-  projects: {
-    text: 'Projects',
-    page: 'Projects',
+  trinkets: {
+    text: 'Trinkets',
+    page: 'Trinkets',
     icon: 'dashboard',
     href: '/projects',
   },
