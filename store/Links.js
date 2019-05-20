@@ -9,7 +9,7 @@ export default {
     text: 'Trinkets',
     page: 'Trinkets',
     icon: 'dashboard',
-    href: '/projects',
+    href: '/trinkets',
   },
   blog: {
     text: 'Blog',
