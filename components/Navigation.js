@@ -1,6 +1,6 @@
 const buildLink = (link, dropdown) => `
 <li class="nav_item perfect-center${dropdown ? ' has_dropdown' : ''}">
-  <a class="nav_link" data-component="${link.page}" href="${link.href}">
+  <a class="nav_link" href="${link.href}" data-navigo>
     <i class="material-icons nav_icon">${link.icon}</i>
     ${link.text}
   </a>
