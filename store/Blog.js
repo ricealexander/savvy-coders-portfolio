@@ -1,3 +1,5 @@
+import linkIndex from './Links';
+
 export default {
   body: 'Blog',
   title: 'Blog',
@@ -5,4 +7,5 @@ export default {
     primary: ['home', 'blog', 'projects'],
     projects: ['classProject', 'hackAThon', 'demoDay'],
   },
+  linkIndex,
 };

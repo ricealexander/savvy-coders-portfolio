@@ -1,3 +1,6 @@
+import linkIndex from './Links';
+
+// Import Assets
 import photoAvatar  from '../assets/avatar.png';
 import iconCodepen  from '../assets/svg/icon-codepen.svg';
 import iconCodewars from '../assets/svg/icon-codewars.svg';
@@ -12,6 +15,7 @@ export default {
     primary: ['home', 'blog', 'projects'],
     projects: ['classProject', 'hackAThon', 'demoDay'],
   },
+  linkIndex,
   images: {
     photoAvatar,
   },
