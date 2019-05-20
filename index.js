@@ -1,5 +1,5 @@
 // Import Components
-import Header  from './components/Header';
+import Navigation  from './components/Navigation';
 import Content from './components/Content';
 import Footer  from './components/Footer';
 
@@ -18,7 +18,7 @@ function render(state) {
   }
 
   root.innerHTML = `
-    ${Header(state)}
+    ${Navigation(state)}
     ${Content(state)}
     ${Footer(state)}
   `;
