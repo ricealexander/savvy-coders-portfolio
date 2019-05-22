@@ -8,8 +8,9 @@ const buildLink = (link, dropdown) => `
 </li>`;
 
 const recursiveLinkBuilder = state => (html, link) => {
-  const stateLinks = state.links;
-  const dropdown = (stateLinks[link]) ? stateLinks[link].reduce(recursiveLinkBuilder(state), '') : '';
+  const Links = state.links;
+  // if the link exists as a dropdown, build the dropdown
+  const dropdown = (Links[link]) ? Links[link].reduce(recursiveLinkBuilder(state), '') : '';
   return html + buildLink(state.linkIndex[link], dropdown);
 };
 
