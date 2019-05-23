@@ -1,5 +1,6 @@
 // Import Dependencies
 import Navigo from 'navigo';
+// import { capitalize } from 'lodash';
 
 // Import Components
 import Navigation from './components/Navigation';
