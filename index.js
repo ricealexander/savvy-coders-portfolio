@@ -1,5 +1,7 @@
+/* eslint-disable prefer-template */
 // Import Dependencies
 import Navigo from 'navigo'
+import axios from 'axios'
 // import { capitalize } from 'lodash';
 
 // Import Components
@@ -37,26 +39,45 @@ router
   .resolve()
 
 
-// axios
-//   .get('https://jsonplaceholder.typicode.com/posts')
-//   .then((response) => {
-//     // response.data contains an ARray of 100 post objects
-//     states.Blog.main = response.data.map(
-//       ({ title, body }) => `
-//       <article>
-//         <h2>${title}<h2>
-//         <p>${body}<p>
-//       </article>
-//     `,
-//     ).join('');
+axios
+  .get('https://jsonplaceholder.typicode.com/posts')
+  .then((response) => {
+    // response.data contains an ARray of 100 post objects
+    states.Blog.main = response.data.map(
+      ({ title, body }) => `
+      <article>
+        <h2>${title}<h2>
+        <p>${body}<p>
+      </article>
+    `,
+    ).join('')
 
-//     if (capitalize(router.lastRouteResolved().params.page) === 'Blog') {
-//       render(states.Blog);
-//     }
+    const lastRoute = router.lastRouteResolved()
+    const route = lastRoute && lastRoute.params && lastRoute.params.page
+    console.log(lastRoute)
 
-//   })
-//   .catch(err => console.log(err));
+    if (route && capitalize(route) === 'Blog') {
+      render(states.Blog)
+    }
+
+  })
+  .catch(console.error)
 
 
 // Gallery
-db.collection('images')
+db.collection('images').get()
+  .then((snap) => {
+
+    const galleryHTML = snap.docs.reduce((HTML, doc) => {
+      const { caption, credit, imgSRC } = doc.data()
+
+      return HTML + `
+        <figure>
+          <img src="${imgSRC}" alt="Image from ${credit}">
+          <figcaption>${caption}</figcaption>
+        </figure>
+      `
+    }, '')
+
+    states.Gallery.main = `<div class="gallery">${galleryHTML}</div>`
+  })
