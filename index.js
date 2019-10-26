@@ -1,3 +1,4 @@
+
 /* eslint-disable prefer-template */
 // Import Dependencies
 import Navigo from 'navigo'
@@ -12,6 +13,9 @@ import Footer     from './components/Footer'
 // Import States
 import * as states from './store'
 import { db } from './firebase'
+import config from './firebase/config'
+
+console.log(config)
 
 const capitalize = string => string.charAt(0).toUpperCase() + string.slice(1).toLowerCase()
 
@@ -65,19 +69,19 @@ axios
 
 
 // Gallery
-db.collection('images').get()
-  .then((snap) => {
+// db.collection('images').get()
+//   .then((snap) => {
 
-    const galleryHTML = snap.docs.reduce((HTML, doc) => {
-      const { caption, credit, imgSRC } = doc.data()
+//     const galleryHTML = snap.docs.reduce((HTML, doc) => {
+//       const { caption, credit, imgSRC } = doc.data()
 
-      return HTML + `
-        <figure>
-          <img src="${imgSRC}" alt="Image from ${credit}">
-          <figcaption>${caption}</figcaption>
-        </figure>
-      `
-    }, '')
+//       return HTML + `
+//         <figure>
+//           <img src="${imgSRC}" alt="Image from ${credit}">
+//           <figcaption>${caption}</figcaption>
+//         </figure>
+//       `
+//     }, '')
 
-    states.Gallery.main = `<div class="gallery">${galleryHTML}</div>`
-  })
+//     states.Gallery.main = `<div class="gallery">${galleryHTML}</div>`
+//   })
